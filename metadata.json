@@ -1,0 +1,6 @@
+{
+  "name": "LoRaEmergency",
+  "description": "Offline-first Disaster Emergency Communication App using simulated and real ESP32 LoRa Nodes",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
