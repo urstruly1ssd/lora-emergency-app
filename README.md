@@ -1,22 +1,25 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Multi-Node LoRa Communication System (ESP32)
 
-# Run and deploy your AI Studio app
+## Overview
+This repository contains the codebase and application assets for a multi-node communication system built utilizing ESP32 modules over LoRa[cite: 1]. Designed for environments lacking traditional network infrastructure, this system enables hardware nodes to exchange data directly without requiring internet connectivity[cite: 1].
 
-This contains everything you need to run your app locally.
+A primary engineering focus of this project was optimizing user experience and system reliability. By replacing an earlier generic Bluetooth-terminal-based workflow, this system introduces a custom application featuring a built-in communication terminal[cite: 1]. This custom solution streamlines node-to-node interaction into a single interface, significantly improving deployment efficiency and monitoring capabilities[cite: 1].
 
-View your app in AI Studio: https://ai.studio/apps/8b1c7696-ad0b-4d99-843b-dca57f2750e0
+## Key Features
+* **Decentralized Network Infrastructure:** Engineered a multi-node communication system using ESP32 microcontrollers and LoRa RF technology[cite: 1].
+* **Off-Grid Data Exchange:** Enables reliable, direct data transmission between physical nodes without relying on cellular or Wi-Fi internet connectivity[cite: 1].
+* **Custom Application Interface:** Developed a dedicated app with an integrated communication terminal, upgrading from standard third-party Bluetooth workflows[cite: 1].
+* **Streamlined User Experience:** Consolidated network monitoring and node interaction into a single, cohesive user interface[cite: 1].
+* **Robust Data Handling:** Implemented specific firmware and scripts to accurately log, parse, and format incoming and outgoing data packets[cite: 1].
+* **Fault Tolerance:** Integrated fundamental error handling mechanisms to maintain stable communication and data integrity across the hardware network[cite: 1].
 
-## Run Locally
+## Technical Stack
+* **Hardware:** ESP32 Microcontrollers, LoRa Transceivers[cite: 1].
+* **Software:** Custom Android Application (Kotlin/Java)[cite: 3].
+* **Firmware:** C++[cite: 1].
+* **Core Concepts:** Embedded Systems, RF Communication, Data Parsing, Concurrency[cite: 1].
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
-
-
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
-7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
+## Future Enhancements
+* **End-to-End Encryption:** Implement lightweight cryptographic protocols on the ESP32 to secure node-to-node message transmission.
+* **Mesh Routing:** Develop mesh networking capabilities to dynamically route packets through intermediary nodes, extending the overall range and resilience of the grid.
+* **Asynchronous Cloud Syncing:** Introduce local caching that automatically uploads logged emergency data to a centralized database once a designated node regains standard internet access.
